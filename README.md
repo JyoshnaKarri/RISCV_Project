@@ -1,6 +1,6 @@
 # Single-Cycle RISC-V CPU in Verilog
 
-A complete single-cycle RV32I processor built from scratch in Verilog, block by block, over 10 days as part of the **#100DaysOfVLSI** challenge.
+A complete single-cycle RV32I processor built from scratch in Verilog, block by block, over 9 days (Day 51–59) as part of the **#100DaysOfVLSI** challenge.
 
 Every module was individually designed, simulated, and verified with GTKWave before being integrated into the final datapath.
 
@@ -41,8 +41,7 @@ Control signals (`reg_write`, `alu_src`, `mem_read`, `mem_write`, `mem_to_reg`, 
 | 56 | `alu_control.v` | ALU control — decodes funct3/funct7 into 3-bit ALU operation select |
 | 57 | `data_mem.v` | Data memory — synchronous write, asynchronous read |
 | 58 | — | Datapath integration design (architecture document, no new code) |
-| 59 | `riscv_cpu.v` | Full single-cycle CPU — all blocks connected |
-| 60 | `riscv_cpu_tb.v` | Top-level testbench — verifies end-to-end instruction execution |
+| 59 | `riscv_cpu.v` + `riscv_cpu_tb.v` | Full single-cycle CPU integrated — all blocks connected, verified end-to-end |
 
 ---
 
